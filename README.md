@@ -8,4 +8,4 @@ The GWAS results for the Pneumonia GWAS may be visualized on the LocusZoom websi
 
 MendelianRandomization.R:
 
-Sample code for 2-sample MR between SBP, DBP variants (detailed in Zekavat et al. Cell Med 2020) and Pneumonia is provided using both the MendlianRandomizaiton package in R, as well as the TwoSampleMR package.
+Sample code for 2-sample MR between SBP, DBP variants (detailed in Zekavat et al. Cell Med 2020) and Pneumonia is provided using both the MendlianRandomizatioon package in R, as well as the TwoSampleMR package.
