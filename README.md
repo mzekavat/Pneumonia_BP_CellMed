@@ -1,4 +1,4 @@
-# Pneumonia_BP_CellMed
+# Linking Blood Pressure and Pneumonia in the UK Biobank
 Pneumonia GWAS and 2-sample Mendelian randomization with blood pressure
 
 The Pneumonia GWAS provides an example of how the UK-Biobank GWAS was performed for the pneumonia phenotype as defined in Zekavat et al. Cell Med 2020.
