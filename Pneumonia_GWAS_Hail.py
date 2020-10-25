@@ -38,7 +38,7 @@ ds = ds.filter_cols(hl.is_defined(ds.pheno.age), keep=True)
 
 ### variant qc 
 mt = hl.variant_qc(ds,name='variant_qc')
-mt = mt.filter_rows( ((mt.variant_qc.AF[1] > 0.0001) & (mt.variant_qc.AF[1] < 1) & (mt.info>0.4) & (mt.variant_qc.p_value_hwe >= 0.0000000001)),keep = True )
+mt = mt.filter_rows( ((mt.variant_qc.AF[1] > 0.001) & (mt.variant_qc.AF[1] < 0.999) & (mt.info>0.4) & (mt.variant_qc.p_value_hwe >= 0.0000000001)),keep = True )
 final= mt.annotate_rows(AF = mt.variant_qc.AF[1],AC = mt.variant_qc.AC[1],AN = mt.variant_qc.AN)
 #final_annot = final.annotate_rows(HWE = final.variant_qc.p_value_hwe, callRate = final.variant_qc.call_rate)
 #final_annot = final_annot.drop('variant_qc').rows()
